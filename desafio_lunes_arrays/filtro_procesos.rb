@@ -1,18 +1,10 @@
-def read_file(procesos)
-        original_data = open(procesos).readlines
-        lines = original_data.count
-        array = []
-
-    lines.times do |i|
-        array << original_data[i].to_i
-    end
-
-    return array
-
+def file_to_i(filename)
+    original_data = data(filename).readlines
+    original_data.map {|i| i.to_i}
 end
-    data = read_file("nuevo")
-    n = data.count
 
-    n.times do |i|
-        data[i] = 250 if data[i] > 250
-    end
+data_i = file_to_i("procesos")
+limite = ARGV[0].to_i
+data_final = data_i.reject{|x| x < limite}
+
+file.write('procesos_dos', data_final.join("\n"))
