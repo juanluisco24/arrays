@@ -1,5 +1,5 @@
-#Ventas totales primer semestre +10%
-#Ventas totales segundo semestre +20%
+#Ventas totales primeros 3 meses semestre 1 +10%
+#Ventas totales segundo 3 meses semestre 1 +20%
 
 #Traer la informacion del archivo leida como float
 #dividir en dos los datos
